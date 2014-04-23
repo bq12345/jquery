@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(jQuery.isFunction(function(x, y) {
+		}));
+		jQuery.globalEval("console.log('这是一个测试')");
+		console.log(jQuery.browser.webkit);
+		console.log(jQuery.makeArray({
+			name : 'bq',
+			age : 25
+		}));
+		var a = function(x) {
+			return x * x;
+		};
+		console.log(jQuery.map([ 5, 2, 6 ], a));
+	</script>
+</body>
+</html>

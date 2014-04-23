@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery.js"></script>
+   <!-- <script type="text/javascript" src="jquery-1.2.6.js"></script>-->
+</head>
+<body>
+    <div id="content">
+        <ul class="nav" id="1">
+            <li>这是#content #1 first</li>
+            <li>这是#content #1</li>
+            <li>这是#content #1</li>
+        </ul>
+        <ul class="nav" id="2">
+            <li>这是#content #2</li>
+            <li>这是#content #2</li>
+            <li>这是#content #2</li>
+        </ul
+    </div>
+	<script type="text/javascript">
+        console.log("ID 选择器");
+		console.log($("#content").css("background","#efe"));
+        console.log("class 选择器");
+        console.log($(".nav"));
+        console.log("混合选择器");
+        console.log($("#content ul"));
+        /*设置属性或是CSS*/
+        $(".nav").css("color","#444");
+        $(".nav").css("list-style","none");
+        $(".nav").attr("name","haha");
+        $(".nav").css("font-size","30px");
+	</script>
+</body>
+</html>

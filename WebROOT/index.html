@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<div id="hello" style="height:300px;width:100%">你妹啊</div>
+		<script type="text/javascript">
+		console.log($().jquery);
+		console.log(Object.prototype.toString.call($("#hello")));
+		console.log($("#hello").html("你是谁").jquery);
+		console.log($().author);
+		</script>	
+	</body>
+</html>
