@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery.js"></script>
+   <!-- <script type="text/javascript" src="jquery-1.2.6.js"></script>-->
+</head>
+<body>
+    <div id="content">
+        <button id="send">点击我有惊喜</button>
+    </div>
+	<script type="text/javascript">
+        console.log("ID 选择器");
+        $().ready(function(){
+            console.log("激动人心的jQuery ready函数");
+        });
+		$("#send").click(function(){
+            console.log("Id=send的被点击");
+        });
+	</script>
+</body>
+</html>
