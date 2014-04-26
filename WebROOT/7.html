@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ex7</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <!-- <script type="text/javascript" src="jquery-1.2.6.js"></script>-->
+</head>
+
+<body>
+    <div id="content">
+        <button id="send">点击Ajax</button>
+        <button id="sendGet">点击Get</button>
+        <button id="sendPost">点击Post</button>
+    </div>
+    <script type="text/javascript">
+        $().ready(function() {
+            console.log("激动人心的jQuery ready函数");
+        });
+        $("#send").click(function() {
+            $.ajax({
+                url: "s.txt",
+                type: "post",
+                dataType: "json",
+                success: function(data, status) {
+                    console.log(data);
+                }
+            });
+        });
+        $("#sendGet").click(function() {
+            $.get("s.txt", function(data, status) {
+                console.log(data);
+            }, "json");
+        });
+        $("#sendPost").click(function() {
+            $.post("s.txt", function(data, status) {
+                console.log(data);
+            }, "json");
+        });
+    </script>
+</body>
+
+</html>
